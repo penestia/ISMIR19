@@ -40,6 +40,8 @@ $ cd data
 $ ln -s <path-to-where-MAESTRO-was-extracted-to> .
 $ cd ..
 ```
+Notice we do not use the single note, since the maestro dataset has a whole track and no single notes, if you are using another dataset with single notes you can use the files that are designed for single notes as well. 
+
 
 create metadata-file for non-overlapping MAESTRO subset (or use the ones checked in ...)
 ```

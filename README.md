@@ -9,7 +9,7 @@ it is recommended you first create a python 3 virtual environment
 $ python3 -m venv ISMIR19
 $ cd ISMIR19
 $ source bin/activate
-$ git https://github.com/penestia/ISMIR19.git
+$ git clone https://github.com/penestia/ISMIR19.git
 ```
 
 until a new madmom version is released on pip, you'll have to build madmom from source:

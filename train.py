@@ -104,7 +104,7 @@ def main():
         hop_size=1,
         origin='center'
     )
-    base_directory = '/homes/es314/RM/ismir-19/data/maps_piano/data'
+    base_directory = '/homes/es314/RM/ismir-19/data/maestro_piano/data'
     fold_directory = './splits/maestro-non-overlapping'
     train_loader = get_data_loader(
         direction=direction,

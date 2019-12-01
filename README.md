@@ -65,10 +65,10 @@ $ python train.py
 
 ##### Figures 1 and 5
 - this generates figure 1 (among other, similar figures) by going from [x, x_pad] -> [y, yz_pad, z] and back again
-- filename for figure 1 is `z_hat_pad_y_hat_input_output_MAESTRO_MUS-chpn-p19_ENSTDkCl.pdf`
+- filename for figure 1 is `z_hat_pad_y_hat_input_output_MIDI-Unprocessed-chpn-p19_ENSTDkCl.pdf`
 - this also generates figure 5 (among other, similar figures) by replacing the inferred [y, yz_pad, z] vector by something produced by an oracle (a perfectly working denoising algorithm, for example, or the groundtruth)
 - this is to see what happens when we use the network as a conditional GAN only
-- filename for figure 5 is `z_samp_zero_y_true_input_output_MAPS_MUS-chpn-p19_ENSTDkCl.pdf`
+- filename for figure 5 is `z_samp_zero_y_true_input_output_MIDI-Unprocessed-chpn-p19_ENSTDkCl.pdf`
 
 ```
 $ python plot_maestro_spec2labels_xyz.py runs/<run-name>/model_state_final.pkl plots/xyz
@@ -77,7 +77,7 @@ $ python plot_maestro_spec2labels_xyz.py runs/<run-name>/model_state_final.pkl p
 ##### Figure 4
 - this generates figure 4 (among other, similar figures) by going from [x, x_pad] -> [y, yz_pad, z] -> [y_denoised, 0, z ~ N(O,I)] -> [x_sampled, x_pad_sampled]
 - the 'editing' of the inferred variables in y_denoised is done in a **very ad-hoc** fashion, nowhere near a proper denoising algorithm ...
-- filename `z_zero_y_edit_input_output_MAPS_MUS-chpn-p19_ENSTDkCl.pdf`
+- filename `z_zero_y_edit_input_output_MIDI-Unprocessed-chpn-p19_ENSTDkCl.pdf`
 
 ```
 $ python plot_maestro_spec2labels_edit_xyz.py runs/<run-name>/model_state_final.pkl plots/edit_xyz
